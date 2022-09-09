@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.DatePicker?>
+<VBox minHeight="600" minWidth="400" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kozhanov.cinemafx.ScheduleController">
+  <children>
+    <SplitPane dividerPositions="0.10356347438752785" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane fx:id="leftPane" maxWidth="100">
+          <children>
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" minWidth="35.0" prefWidth="-1.0" style="&#10;" textAlignment="CENTER" wrapText="false">
+              <font>
+                <Font size="18.0" fx:id="x1" />
+              </font>
+            </Label>
+                  <Button fx:id="filmsButton" onAction="#openFilmsPage" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" />
+                  <Button fx:id="scheduleButton" layoutX="15.0" layoutY="227.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" />
+                  <Button fx:id="ticketsButton" onAction="#openTicketsPage" layoutX="15.0" layoutY="276.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" />
+                  <Button fx:id="menuButton"  layoutX="15.0" layoutY="41.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" />
+          </children>
+        </AnchorPane>
+        <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
+          <content>
+            <AnchorPane fx:id="secondPane" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="430.0">
+              <children>
+                <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" textAlignment="CENTER" wrapText="false" />
+                        <Label fx:id="filmsVprokate" layoutX="14.0" layoutY="28.0" text="Расписание кинотеатра">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="scheduleTableView" layoutX="14.0" layoutY="121.0" prefHeight="477.0" prefWidth="769.0">
+                          <columns>
+                            <TableColumn fx:id="idColumn" maxWidth="75.0" minWidth="75.0" text="id" />
+                            <TableColumn fx:id="idFilm" maxWidth="150.0" minWidth="150.0" text="название фильма" />
+                            <TableColumn fx:id="idHall" maxWidth="75.0" minWidth="75.0" text="Номер зала" />
+                            <TableColumn fx:id="startDateTimeColumn" maxWidth="106.0" minWidth="156.0" text="начало фильма" />
+                          </columns>
+                        </TableView>
+                        <ComboBox fx:id="choseHall" layoutX="14.0" layoutY="71.0" prefHeight="25.0" prefWidth="119.0" promptText="Выберите зал" />
+                        <Button fx:id="add" layoutX="285.0" layoutY="71.0" prefHeight="25" mnemonicParsing="false" text="Добавить сеанс"  onAction="#addSchedule"/>
+                        <DatePicker fx:id="whereDatePicker" layoutX="150.0" layoutY="72" prefHeight="25.0" prefWidth="120.0" promptText="Какого числа"/>
+                        <Button fx:id="clearSetting" onAction="#clearSetting" layoutX="400" layoutY="71" text="Сбросить"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+      </items>
+    </SplitPane>
+  </children>
+</VBox>

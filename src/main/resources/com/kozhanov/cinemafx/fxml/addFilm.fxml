@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="237.0" minWidth="424.0" prefHeight="350.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/18" fx:controller="com.kozhanov.cinemafx.Controllers.AddController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="42.0" layoutY="32.0" text="Введите данные:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="89.0" text="Название фильма:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="134.0" prefHeight="27.0" prefWidth="151.0" text="Длительность:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="179.0" prefHeight="27.0" prefWidth="151.0" text="Дата начала показа">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="225.0" prefHeight="27.0" prefWidth="149.0" text="Дата окончания показа">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldNameFilm" layoutX="225.0" layoutY="89.0" />
+      <TextField fx:id="textFieldDuration" layoutX="225.0" layoutY="134.0" />
+      <DatePicker fx:id="startDateDataPicker" layoutX="225.0" layoutY="179.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="stopDateDataPicker"  layoutX="225.0" layoutY="224.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button onMouseClicked="#comfirmAddFilm" fx:id="btnComfirmAddFilm"  layoutX="225" layoutY="269" prefHeight="25.0" prefWidth="149.0" text="Добавить фильм"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+#leftPane{
+    -fx-background-color:#FFFFFF;
+}
+.button{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+.button:hover{
+    -fx-border:15px;
+    -fx-border-color:#399FE1 ;
+    -fx-border-radius: 5;
+}
+#filmsButton{
+        -fx-graphic: url(../images/video_library2.png);
+}
+#scheduleButton{
+       -fx-graphic: url(../images/insert_invitation.png);
+}
+#ticketsButton{
+        -fx-graphic: url(../images/money_off.png);
+}
+#menuButton{
+        -fx-graphic: url(../images/list_24.png);
+}
+#addFilms{
+    -fx-border-radius:5;
+    -fx-border-color:#399FE1;
+}
+#addFilms:hover{
+
+    -fx-background-color:#399FE1;
+    -fx-text-fill: #FFFFFF
+}
+#secondPane{
+    -fx-background-color:#FFFFFF;
+}
