@@ -1,6 +1,6 @@
-package com.kozhanov.cinemafx;
+package com.kozhanov.cinemafx.Controllers;
 
-import com.kozhanov.cinemafx.models.ScheduleTableView;
+import com.kozhanov.cinemafx.HelloApplication;
 import com.kozhanov.cinemafx.models.Ticket;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;

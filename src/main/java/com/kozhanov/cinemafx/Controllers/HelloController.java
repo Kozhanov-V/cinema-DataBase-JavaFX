@@ -1,10 +1,10 @@
-package com.kozhanov.cinemafx;
+package com.kozhanov.cinemafx.Controllers;
 
+import com.kozhanov.cinemafx.HelloApplication;
 import com.kozhanov.cinemafx.models.Films;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -91,7 +91,6 @@ public class HelloController {
                 e.printStackTrace();
             }
             filmsTableView.setEditable(true);
-            // устанавливаем тип и значение которое должно хранится в колонке
             idColumn.setCellValueFactory(new PropertyValueFactory<Films, Integer>("idFilm"));
             tittleColumn.setCellValueFactory(new PropertyValueFactory<Films, String>("tittle"));
             tittleColumn.setCellFactory(TextFieldTableCell.forTableColumn());

@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.control.DatePicker?>
-<VBox minHeight="600" minWidth="400" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kozhanov.cinemafx.ScheduleController">
+<VBox minHeight="600" minWidth="400" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kozhanov.cinemafx.Controllers.ScheduleController">
   <children>
     <SplitPane dividerPositions="0.10356347438752785" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <items>

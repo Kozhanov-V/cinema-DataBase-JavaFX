@@ -45,7 +45,7 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<VBox prefHeight="600.0" prefWidth="900.0" minWidth="400" minHeight="600" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kozhanov.cinemafx.HelloController">
+<VBox prefHeight="600.0" prefWidth="900.0" minWidth="400" minHeight="600" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kozhanov.cinemafx.Controllers.HelloController">
   <children>
     <SplitPane dividerPositions="0.10356347438752785" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0"  VBox.vgrow="ALWAYS">
       <items>

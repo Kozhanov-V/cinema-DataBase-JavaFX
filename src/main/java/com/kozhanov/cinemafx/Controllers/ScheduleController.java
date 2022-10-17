@@ -1,14 +1,11 @@
-package com.kozhanov.cinemafx;
+package com.kozhanov.cinemafx.Controllers;
 
-import com.kozhanov.cinemafx.models.Films;
+import com.kozhanov.cinemafx.HelloApplication;
 import com.kozhanov.cinemafx.models.Schedule;
 import com.kozhanov.cinemafx.models.ScheduleTableView;
-import javafx.beans.InvalidationListener;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -16,7 +13,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -24,7 +20,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.*;
 import java.sql.Date;
-import java.time.DateTimeException;
 import java.time.ZoneId;
 import java.util.*;
 
